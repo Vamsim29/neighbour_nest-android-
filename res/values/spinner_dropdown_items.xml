@@ -1,0 +1,10 @@
+<!-- spinner_dropdown_items.xml -->
+<resources>
+    <string-array name="status_array">
+        <item>Accepted</item>
+        <item>Booked</item>
+        <item>Cancelled</item>
+    <item>completed</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>

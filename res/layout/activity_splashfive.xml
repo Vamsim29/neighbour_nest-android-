@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splashfive"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:id="@+id/bluebox"
+        android:layout_width="150sp"
+        android:layout_height="150sp"
+        android:background="@drawable/splashfivesquare"
+        android:contentDescription="squarebox"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/viewtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerInParent="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NeighbourNest"
+            android:textColor="@color/indigo"
+            android:textSize="40sp"
+            android:fontFamily="@font/poppinsmedium"
+            />
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:background="@drawable/splashtwofirst"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+</RelativeLayout>

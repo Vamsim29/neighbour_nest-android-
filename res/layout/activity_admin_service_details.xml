@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_admin_service_details.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+    android:background="@drawable/recorddisplay"
+    android:layout_margin="15sp"
+    android:padding="10sp"
+android:orientation="vertical">
+    <TextView
+        android:id="@+id/r"
+        android:textSize="20sp"
+        android:layout_marginStart="10sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Room Id : "/>
+
+    <TextView
+        android:id="@+id/n"
+        android:textSize="20sp"
+        android:layout_marginStart="10sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "/>
+    <TextView
+        android:id="@+id/s"
+        android:textSize="20sp"
+        android:layout_marginStart="10sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Service: "/>
+
+    <TextView
+        android:id="@+id/c"
+        android:textSize="20sp"
+        android:layout_marginStart="10sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cont: "/>
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/date"
+        android:layout_marginStart="10sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: "/>
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/act"
+        android:layout_marginStart="10sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Actions: "/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="20sp">
+    <Spinner
+        android:id="@+id/statusSpinner"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="10sp"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dataDisplayLinearLayout"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_marginStart="85sp"
+        android:textSize="15sp"
+        android:background="@drawable/lightbluebutton"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_marginTop="8dp"/>
+    </LinearLayout>
+</LinearLayout>
+
+

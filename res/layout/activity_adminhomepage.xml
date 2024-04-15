@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/indigo"
+    android:layout_height="match_parent"
+    android:id="@+id/admindrawerlayout"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start"
+    tools:context=".adminhomepage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/loginpagebox"
+        android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:paddingTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admiintoolbar"
+            android:elevation="4dp"
+            android:background="@color/indigo"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70sp"
+                android:background="@color/indigo">
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/homebackpage"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="18sp"
+                    android:layout_gravity="center"
+                    android:layout_width="150sp"
+                    android:layout_height="150sp"
+                    android:src="@drawable/logocommuni"/>
+
+                <TextView
+                    android:layout_marginTop="16sp"
+                    android:layout_marginHorizontal="30sp"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Together, we can make a difference. Join our community and lend a helping hand today"
+                    android:textColor="@color/white"
+                    android:padding="10sp"
+                    android:background="@drawable/noticebutton"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppinsmedium"/>
+
+                <TextView
+                    android:layout_marginTop="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/homepagenotice"
+                    android:textSize="20sp"
+                    android:padding="10sp"
+                    android:background="@drawable/noticebutton"
+                    android:textColor="@color/white"
+                    android:text="Small actions, big impact. Make a donation, fulfill a request, and support your community"
+                    android:fontFamily="@font/poppinsregular"
+                    android:layout_marginHorizontal="30sp"/>
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_marginTop="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/adminnavview"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/adminnavheader"
+        app:menu="@menu/adminnavmenu"
+        app:itemIconTint="@color/indigo"
+        app:itemTextColor="@color/indigo"
+        app:itemTextAppearance="@style/menubarpoppoins"
+        />
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,8 @@
+<!-- spinner_dropdown_items.xml -->
+<resources>
+    <string-array name="in_don_status_array">
+        <item>Available</item>
+        <item>Taken</item>
+        <!-- Add more items as needed -->
+    </string-array>
+</resources>

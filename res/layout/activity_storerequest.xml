@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/indigo"
+    android:layout_height="match_parent"
+    tools:context=".storerequest">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/storerequestbackbtn"
+        android:layout_width="45sp"
+        android:layout_height="45sp"
+        android:layout_marginStart="18sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/baseline_arrow_back"
+        android:layout_gravity="bottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="150sp"
+        android:background="@drawable/loginpagebox"
+        android:orientation="vertical"
+        android:paddingVertical="30sp"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/textheadingfield"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book a Watercan"
+            android:textSize="40sp"
+            android:fontFamily="@font/poppinsmedium"
+            />
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:text="Name   :"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="25sp" />
+
+            <EditText
+                android:id="@+id/storeusername"
+                android:layout_width="match_parent"
+                android:layout_height="57sp"
+                android:background="@drawable/shadowlayout"
+                android:elevation="10sp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="30sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10sp"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Mobile Number   :"
+                android:textSize="25sp" />
+            <EditText
+                android:id="@+id/storeusermobileno"
+                android:layout_width="match_parent"
+                android:layout_height="57sp"
+                android:background="@drawable/shadowlayout"
+                android:elevation="20sp"
+                />
+        </LinearLayout>
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/servicesubmitbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:backgroundTint="@color/lightblue"
+            android:text="Submit"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppinsregular"
+            android:textColor="@color/black"
+            android:layout_gravity="center"
+            />
+    </LinearLayout>
+
+</RelativeLayout>
